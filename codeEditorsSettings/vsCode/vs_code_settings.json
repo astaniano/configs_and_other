@@ -1,0 +1,45 @@
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.cursorStyle": "block",
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "editor.renderLineHighlight": "none",
+    "editor.bracketPairColorization.enabled": false, 
+    "editor.guides.indentation": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.accessibilitySupport": "off",
+    "editor.fontSize": 13,
+    "editor.linkedEditing": true,
+    "javascript.preferences.renameMatchingJsxTags" : true,
+    "typescript.preferences.renameMatchingJsxTags": true,
+    "explorer.compactFolders": false,
+    "window.zoomLevel": 2,
+    "diffEditor.experimental.showMoves": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "terminal.integrated.env.osx": {},
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "right",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}

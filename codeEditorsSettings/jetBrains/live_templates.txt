@@ -1,0 +1,5 @@
+abbreviation: aa
+snippet: ($START$) => {$END$}
+
+abbreviation: pl
+snippet: fmt.Println($END$)

@@ -1,0 +1,19 @@
+after installation reboot pc and press Esc until grub command line is shown
+then type "normal" then press enter then keep pressing Esc
+on linux mint press E. 
+find line that starts with "linux" and ends with "quite splash"
+at the end of that line add two spaces and type either "nomodeset" or "nouveau.modeset=0" and press "F10"
+when os is loaded open driver manager and select nvidia-driver-470 (it should be recomended, 09.11.23 nvidia-driver-535 was recommended)
+wait till it is downloaded and installed then reboot=))
+
+
+additional useful info:
+ubuntu-drivers devices - shows all possible drivers for installation
+nvidia-smi - shows which nvidia driver is now used
+
+sudo apt install nvidia-driver-450
+sudo apt remove nvidia-driver-450
+
+useful article:
+https://itsfoss.com/nvidia-linux-mint/
+
