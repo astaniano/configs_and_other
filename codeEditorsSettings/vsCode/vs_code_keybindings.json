@@ -47,6 +47,14 @@
 			"snippet": "```\n${TM_SELECTED_TEXT}\n```"
 		}
 	},
+	{
+		"key": "alt+2",
+		"command": "editor.action.insertSnippet",
+		"when": "editorTextFocus",
+		"args": {
+			"snippet": "```bash\n${TM_SELECTED_TEXT}\n```"
+		}
+	},
 	{ "key": "ctrl+n",
 		"command": "explorer.newFile",
 		"when": "!editorFocus" 
