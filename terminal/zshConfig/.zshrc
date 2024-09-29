@@ -85,17 +85,32 @@ if [ "$color_prompt" = yes ]; then
 fi
 unset color_prompt force_color_prompt
 
-# PS1="%n@%m %1~ %# "
-# P1S1="%~ %# "
-PS1="%F{yellow}%~%f %# "
+function set_prompt {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        VENV="($(basename "$VIRTUAL_ENV")) "
+    else
+        VENV=""
+    fi
+    PS1="${VENV}%F{yellow}%~%f %# "
+}
+
+# Register the function to run before each prompt
+precmd() { set_prompt }
 
 export LSCOLORS="GxFxCxDxBxegedabagaced"
 
 alias ls="ls -G"
 alias ll="ls -l"
 alias la="ls -la"
-alias cdp="cd ~/my_files/programming"
-alias cdt="cd ~/my_files/programming/my_gh/tracker"
-alias t="python3 ~/my_files/programming/my_gh/tracker/main.py"
+alias gc="git add . && git commit -m"
+alias phs="python3 -m http.server"
 alias d="docker"
+
+# =======================
+# added by me block below
+# =======================
+export PATH=/opt/homebrew/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
