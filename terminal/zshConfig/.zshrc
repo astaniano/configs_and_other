@@ -102,9 +102,10 @@ export LSCOLORS="GxFxCxDxBxegedabagaced"
 alias ls="ls -G"
 alias ll="ls -l"
 alias la="ls -la"
-alias gc="git add . && git commit -m"
-alias phs="python3 -m http.server"
 alias d="docker"
+alias gc="git add . && git commit -m"
+alias en0="ifconfig en0"
+alias phs="python3 -m http.server"
 
 # =======================
 # added by me block below
@@ -113,4 +114,3 @@ export PATH=/opt/homebrew/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
