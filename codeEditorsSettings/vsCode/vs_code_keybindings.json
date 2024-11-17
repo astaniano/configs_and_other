@@ -32,6 +32,14 @@
 		}
 	},
 	{
+		"key": "alt+w",
+		"command": "editor.action.insertSnippet",
+		"when": "editorTextFocus",
+		"args": {
+			"snippet": "> Note:\n>\n> ${TM_SELECTED_TEXT}"
+		}
+	},
+	{
 		"key": "alt+q",
 		"command": "editor.action.insertSnippet",
 		"when": "editorTextFocus",
