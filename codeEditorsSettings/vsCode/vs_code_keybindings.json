@@ -24,12 +24,19 @@
 		}
 	},
 	{
-		"key": "alt+a",
-		"command": "editor.action.insertSnippet",
-		"when": "editorTextFocus",
-		"args": {
-			"snippet": "($1) => {$0}"
-		}
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+0",
+		"command": "-editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
 	},
 	{
 		"key": "alt+w",
@@ -48,14 +55,6 @@
 		}
 	},
 	{
-		"key": "alt+1",
-		"command": "editor.action.insertSnippet",
-		"when": "editorTextFocus",
-		"args": {
-			"snippet": "```\n${TM_SELECTED_TEXT}\n```"
-		}
-	},
-	{
 		"key": "alt+2",
 		"command": "editor.action.insertSnippet",
 		"when": "editorTextFocus",
@@ -63,7 +62,8 @@
 			"snippet": "```bash\n${TM_SELECTED_TEXT}\n```"
 		}
 	},
-	{ "key": "ctrl+n",
+	{ 
+		"key": "ctrl+n",
 		"command": "explorer.newFile",
 		"when": "!editorFocus" 
 	},
@@ -71,21 +71,6 @@
 		"key": "ctrl+shift+n",
 		"command": "explorer.newFolder",
 		"when": "!editorFocus"
-	},
-	{
-		"key": "ctrl+shift+k",
-		"command": "-editor.action.deleteLines",
-		"when": "textInputFocus && !editorReadonly"
-	},
-	{
-		"key": "ctrl+shift+k",
-		"command": "editor.foldAll",
-		"when": "editorTextFocus && foldingEnabled"
-	},
-	{
-		"key": "ctrl+k ctrl+0",
-		"command": "-editor.foldAll",
-		"when": "editorTextFocus && foldingEnabled"
 	},
 	{
 		"key": "ctrl+shift+p",
