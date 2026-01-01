@@ -62,6 +62,14 @@
 			"snippet": "```bash\n${TM_SELECTED_TEXT}\n```"
 		}
 	},
+	{
+		"key": "alt+3",
+		"command": "editor.action.insertSnippet",
+		"when": "editorTextFocus",
+		"args": {
+			"snippet": "### "
+		}
+	},
 	{ 
 		"key": "ctrl+n",
 		"command": "explorer.newFile",
@@ -89,5 +97,9 @@
 		"key": "ctrl+shift+v",
 		"command": "-markdown.showPreview",
 		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+alt+m",
+		"command": "markdown.preview.toggleLock"
 	}
 ]
